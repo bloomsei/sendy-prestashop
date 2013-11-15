@@ -1,0 +1,59 @@
+/* Sendy newsletter */
+#sendy_newsletter {
+	padding:7px;
+	border:1px solid #ccc;
+	background:#eee;
+}
+#sendy_newsletter .title_block, #sendy_newsletter h4  {
+	padding:0 0 12px 28px;
+	color:#666;
+	text-shadow:0 1px 0 #fff;
+	background:url(../../img/icon/newsletter.png) no-repeat 0 0 transparent;
+}
+#sendy_newsletter p {padding:0;}
+
+#sendy_newsletter p.sn_success {
+	color: #418B19;
+	font-weight: bold;
+	display: none;
+}
+#sendy_newsletter p.sn_warning {
+	color: #DA0F00;
+	font-weight: bold;
+	display: none;
+}
+
+#sendy_newsletter input#sendynewsletter_email, #sendy_newsletter input#sendynewsletter_name{
+	position: relative;
+	top: -1px;
+	padding:0 5px;
+	height:20px;
+	width:148px;
+	border:1px solid #ccc;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-radius-topleft: 3px;
+	-webkit-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-size:10px;
+	color:#999;
+}
+#sendy_newsletter input#sendynewsletter_email
+{
+	border-right:none;
+}
+*:first-child+html #sendy_newsletter input.inputNew {position:static;}/* hack ie 7 */
+
+#sendy_newsletter input.button_mini {
+	position:relative;
+	left:-2px;
+	height:23px;
+	width:24px;
+	border:0;
+	text-indent:-5000px;
+	background:url(../../img/bg_bt_newsletter_ok.png) no-repeat 0 0;
+	cursor:pointer
+}
+*:first-child+html #sendy_newsletter input.button_mini {padding-left:24px !important;}/* hack ie 7 */
+
